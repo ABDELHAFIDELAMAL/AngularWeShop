@@ -15,9 +15,18 @@ export class ProductService {
     return this.http.get(this.api + '/all');
   }
   
+  getProductById(id : number){
+    return this.http.get(this.api + '/get/' + id);
+  }
   deleteProduct(product : any){
-    
+    return this.http.delete(this.api + '/delete/' + product.id);
   }
 
+  addProduct(product : any){
+    return this.http.post(this.api + '/add', product);
+  } 
+  updateProduct(product : any){
+    return this.http.put(this.api + '/update/' + product.id, product);
+  }
   
 }
