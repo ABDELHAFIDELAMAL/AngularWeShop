@@ -10,6 +10,7 @@ import { ProductService } from '../services/product';
   standalone : true
 })
 export class Home {
+  products : any = [];
 
   constructor(private productService : ProductService){
     this.getAllProducts();
