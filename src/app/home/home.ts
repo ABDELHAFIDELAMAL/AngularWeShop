@@ -27,5 +27,13 @@ export class Home {
     }
   }
 
-  
+  getProductById(id : number){
+    this.productService.getProductById(id);
+  }
+
+  update(product : any , id : number){
+    this.productService.updateProduct(product);
+    this.getAllProducts();
+  }
+
 }
