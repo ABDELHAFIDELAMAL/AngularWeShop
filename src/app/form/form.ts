@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-form',
   imports: [
-    RouterLink
+    RouterLink ,
+    RouterOutlet
   ],
   templateUrl: './form.html',
   styleUrl: './form.css',
@@ -12,6 +13,5 @@ import { RouterLink } from '@angular/router';
 
 })
 export class Form {
-  
 
 }

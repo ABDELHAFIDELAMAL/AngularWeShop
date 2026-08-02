@@ -3,14 +3,27 @@ header{
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: fixed;
     top: 0; left: 0;
     z-index: 100;
     box-shadow: 0 0 2px black;
+    font-family: sans-serif;
 }
 ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 10px;
+    list-style: none;
+}
+header div button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+      transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 2px black;
+}
+header div button:hover{
+    color: rgb(0, 166, 255);
 }
