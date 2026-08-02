@@ -6,9 +6,10 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
   private api = 'http://localhost:8080/api/v1/products/' ;
+  products : any = [];
 
   constructor(private http : HttpClient){
-    this.getAllProducts();
+    this.products = this.getAllProducts();
   }
 
   getAllProducts(){
