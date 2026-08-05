@@ -1,48 +1,55 @@
-<header class="header sticky-top bg-white shadow-sm">
-  <nav class="navbar navbar-expand-lg navbar-light py-3">
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-light bg-white rounded-top-4 shadow-sm px-4 py-3">
+  <div class="container-fluid">
     
-      <a class="navbar-brand d-flex align-items-center fs-3 fw-bold text-primary" routerLink="/home">
-        <i class="bi bi-plus-circle-fill me-2 fs-4"></i>
-        <span>WeShop</span>
-      </a>
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <a class="navbar-brand d-flex align-items-center fw-bold text-dark me-auto" routerLink="/store">
+      <i class="bi bi-shop fs-4 me-2"></i>
+      <span>WeShop</span>
+    </a>
 
-      <div class="collapse navbar-collapse" id="mainNavbar">
+    <button 
+      class="navbar-toggler border-0" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarTechWave" 
+      aria-controls="navbarTechWave" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-2 gap-lg-4 text-center">
-          <li class="nav-item">
-            <a class="nav-link fw-medium px-lg-3" routerLink="/home" routerLinkActive="active text-primary fw-semibold" [routerLinkActiveOptions]="{exact: true}">
-              <i class="bi bi-house-door me-1 d-lg-none"></i>Home
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium px-lg-3" routerLink="/about" routerLinkActive="active text-primary fw-semibold">
-              <i class="bi bi-info-circle me-1 d-lg-none"></i>About
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link fw-medium px-lg-3" routerLink="/store" routerLinkActive="active text-primary fw-semibold">
-              <i class="bi bi-shop me-1 d-lg-none"></i>Store
-            </a>
-          </li>
-        </ul>
+    <div class="collapse navbar-collapse justify-content-end gap-4 mt-3 mt-lg-0" id="navbarTechWave">
+      
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3 text-center text-lg-start">
+        <li class="nav-item">
+          <a class="nav-link text-secondary fw-medium" routerLink="/store" routerLinkActive="active fw-bold text-dark">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary fw-medium" routerLink="/about" routerLinkActive="active fw-bold text-dark">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary fw-medium" routerLink="/support" routerLinkActive="active fw-bold text-dark">Support</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-secondary fw-medium" routerLink="/contact" routerLinkActive="active fw-bold text-dark">Contact</a>
+        </li>
+      </ul>
 
-        <div class="d-flex justify-content-center mt-3 mt-lg-0">
-          <button class="btn btn-primary rounded-pill px-4 py-2 fw-semibold shadow-sm d-flex align-items-center" routerLink="/form">
-            <i class="bi bi-person-fill me-2"></i>
-            Se connecter
-          </button>
-        </div>
-        
+      <div class="input-group search-box" style="max-width: 250px;">
+        <input 
+          type="text" 
+          class="form-control rounded-pill-start border-end-0 bg-light text-secondary ps-3" 
+          placeholder="Search" 
+          aria-label="Search">
+        <button class="btn btn-light rounded-pill-end border border-start-0 text-secondary pe-3" type="button">
+          <i class="bi bi-search"></i>
+        </button>
       </div>
+
     </div>
-  </nav>
-</header>
 
+  </div>
+</nav>
 
-<main class="container py-5">
+<main class="container py-4">
   <router-outlet></router-outlet>
 </main>
