@@ -1,33 +1,33 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white rounded-top-4 shadow-sm px-4 py-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-white rounded-top-4 shadow-sm px-4 py-3 fixed-navbar">
   <div class="container-fluid">
-    
+
     <a class="navbar-brand d-flex align-items-center fw-bold text-dark me-auto" routerLink="/store">
       <i class="bi bi-shop fs-4 me-2"></i>
       <span>WeShop</span>
     </a>
 
-    <button 
-      class="navbar-toggler border-0" 
-      type="button" 
-      data-bs-toggle="collapse" 
-      data-bs-target="#navbarTechWave" 
-      aria-controls="navbarTechWave" 
-      aria-expanded="false" 
+    <button
+      class="navbar-toggler border-0"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTechWave"
+      aria-controls="navbarTechWave"
+      aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse justify-content-end gap-4 mt-3 mt-lg-0" id="navbarTechWave">
-      
+
       <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-3 text-center text-lg-start">
         <li class="nav-item">
-          <a class="nav-link text-secondary fw-medium" routerLink="/store" routerLinkActive="active fw-bold text-dark">Store</a>
+          <a class="nav-link text-secondary fw-medium" routerLink="/home" routerLinkActive="active fw-bold text-dark">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-secondary fw-medium" routerLink="/about" routerLinkActive="active fw-bold text-dark">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-secondary fw-medium" routerLink="/support" routerLinkActive="active fw-bold text-dark">Support</a>
+          <a class="nav-link text-secondary fw-medium" routerLink="/store" routerLinkActive="active fw-bold text-dark">Store</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-secondary fw-medium" routerLink="/contact" routerLinkActive="active fw-bold text-dark">Contact</a>
@@ -35,10 +35,10 @@
       </ul>
 
       <div class="input-group search-box" style="max-width: 250px;">
-        <input 
-          type="text" 
-          class="form-control rounded-pill-start border-end-0 bg-light text-secondary ps-3" 
-          placeholder="Search" 
+        <input
+          type="text"
+          class="form-control rounded-pill-start border-end-0 bg-light text-secondary ps-3"
+          placeholder="Search"
           aria-label="Search">
         <button class="btn btn-light rounded-pill-end border border-start-0 text-secondary pe-3" type="button">
           <i class="bi bi-search"></i>
@@ -50,6 +50,6 @@
   </div>
 </nav>
 
-<main class="container py-4">
+<main class="container py-4 main-content">
   <router-outlet></router-outlet>
 </main>
