@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../services/product';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule , RouterOutlet , RouterLink , RouterLinkActive],
+  imports: [CommonModule ],
   templateUrl: './home.html',
   styleUrl: './home.css',
   standalone : true
